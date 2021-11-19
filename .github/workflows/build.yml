@@ -10,5 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run build command
+        uses: ./
         run: |
           npm run build
