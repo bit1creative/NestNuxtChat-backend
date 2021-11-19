@@ -1,0 +1,14 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run build command
+        run: |
+          npm run build
